@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family:sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    padding: 15px;
+
+  }
+  .navbar-item {
+    display: inline;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    transition: 0.1s ease-in;
+    background-color: white;
+    cursor: pointer;
+    border: white;
+}
+
+.navbar-item:hover .navbar-link {
+    color: black;
+    transition: 0.1s ease-in;
+
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width = 768px){
+
+}
