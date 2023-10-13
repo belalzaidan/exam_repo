@@ -1,3 +1,26 @@
+/*
+- Root inneholder alle variabler vi bruker i website. 
+*/
+
+
+/* this is the css for the booking page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@300&display=swap%27');
+
+:root{
+    --maim-color : #212F3D;
+    --second-color : #192f6a;
+    --text-color : #ECF0F1;
+    --second-text-color: #273746;
+    --bg-color: #d7dbdd52 ;
+    --second-bg-color : #FDFEFE;
+    --third-bg-color: #2C3E50;
+    /* Box Shadow*/
+    --box-shadow : 2px 2px 18px rgb(14 52 54 / 20%); 
+    --second-box-shadow: 0px 0px 18px rgb(14 52 54 / 20%);
+}
+
+
+
 body{
     margin: 0;
     font-family:sans-serif;
