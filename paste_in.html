@@ -1,0 +1,145 @@
+@@ -8,15 +8,42 @@
+    <title>OsloMet</title>
+</head>
+<body>
+    <script>
+        // Add JavaScript to toggle the menu when the menu icon is clicked
+        document.querySelector(".menu-icon").addEventListener("click", function() {
+            document.querySelector(".menu").classList.toggle("active");
+        });
+    </script>
+    <!--Navbar for netsiden-->
+    <ul>
+        <li class="navbar-item"><a class="navbar-link" href=""><i class="fa-solid fa-building-columns"></i></a></li>
+        <li class="navbar-item"><a class="navbar-link" href="">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="">Buildings</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="">Cafeteria</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="">Topical</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="">Accecibility</a></li>
+    </ul>
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li class="navbar-item"><a class="navbar-link" href=""><i class="fa-solid fa-building-columns"></i></a></li>
+            <li class="navbar-item"><a class="navbar-link" href="">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="">Buildings</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="">Cafeteria</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="">Topical</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="">Accessibility</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- <div ><h1 id="header">ًWelcome to the main page of Oslo Metropolitan university</h1></div> -->
+
+    <div class="card">
+        <div class="card-image">
+            <img src="" alt="University Image">
+        </div>
+        <div class="card-text">
+            <h2>Become a student at our university!</h2>
+            <h3>We have many different study programs.</h3>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<!--
+    @@ -72,6 +72,89 @@ ul {
+    height: 30px;
+}
+
+@media screen and (max-width = 768px){
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color); /* Use your text color variable */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: block; /* Show the menu by default on larger screens */
+}
+
+
+/* #header{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1080px;
+    width: 100%;
+} */
+
+.card {
+    display: flex;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
+
+    .menu {
+        display: none; /* Hide the menu on smaller screens by default */
+        position: absolute;
+        top: 50px; /* Adjust as needed to position the menu below the navbar */
+        left: 0;
+        background-color: var(--second-bg-color); /* Use your second background color variable */
+        width: 100%;
+    }
+
+    .menu.active {
+        display: block; /* Display the menu when the menu icon is clicked */
+    }
+    
+    .card {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+-->

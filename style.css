@@ -72,6 +72,40 @@ ul {
     height: 30px;
 }
 
+.card {
+    display: flex;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
 @media screen and (max-width = 768px){
 
 }
