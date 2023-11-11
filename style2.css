@@ -1,0 +1,268 @@
+/*
+- Root inneholder alle variabler vi bruker i website. 
+*/
+
+
+/* this is the css for the booking page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@300&display=swap%27');
+
+:root{
+    --maim-color : #212F3D;
+    --second-color : #192f6a;
+    --text-color : #ECF0F1;
+    --second-text-color: #273746;
+    --bg-color: #d7dbdd52 ;
+    --second-bg-color : #FDFEFE;
+    --third-bg-color: #2C3E50;
+    /* Box Shadow*/
+    --box-shadow : 2px 2px 18px rgb(14 52 54 / 20%); 
+    --second-box-shadow: 0px 0px 18px rgb(14 52 54 / 20%);
+}
+
+*{
+    padding : 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background: #f7f7f7;
+}
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    background-color: var(--third-bg-color);
+    padding: 15px;
+
+  }
+  .navbar-item {
+    display: inline;
+    color: var(--text-color);
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    transition: 0.1s ease-in;
+    background-color: var(--second-bg-color);
+    cursor: pointer;
+    border: white;
+}
+
+.navbar-item:hover .navbar-link {
+    color:var(--second-text-color);
+    transition: 0.1s ease-in;
+
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    background-color: var(--second-bg-color);
+    height: 30px;
+} */
+.header{
+    margin: 0;
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 40%;
+    background: rgba(22, 12, 75, 0.893);
+    transition: all 0.6s ease-in-out;
+}
+
+#active:checked ~ .wrapper {
+    left: 0;
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 2;
+    left: 2%;
+    top: 2%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.menu-btn span,
+.menu-btn::before,
+.menu-btn::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 30%;
+    width: 40%;
+    border-bottom: 2px solid #000;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menu-btn::before{
+    transform: translateY(-8px);
+}
+
+.menu-btn:after{
+    transform: translateY(8px);
+}
+
+.close {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    transition: background .3s;
+}
+
+#active:checked + .menu-btn span{
+    transform: scaleX(0);
+}
+
+#active:checked + .menu-btn::before{
+    transform: rotate(45deg);
+    transition-delay: 0.6s;
+    border-color: #bdbd00;
+}
+#active:checked + .menu-btn::after{
+    transform: rotate(-45deg);
+    transition-delay: 0.6s; 
+    border-color: #bdbd00;
+}
+.wrapper ul{
+    position: absolute;
+    top: 60%; /* Adjusted the top position to 50% */
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 90%; /* You can adjust the height as needed */
+}
+
+.wrapper ul li{
+    height: auto; /* Removed the fixed height */
+    margin: 15px 0;
+}
+
+.wrapper ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(244,214,4);
+    padding: 5px 30px;
+    border-radius: 50px;
+    position: relative; /* Changed position to relative */
+    display: inline-block; /* Added display property */
+    line-height: 50px;
+    margin: 5px 30px;
+    transition: all 0.3s ease;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(0); /* Reset the initial transform */
+}
+
+
+.wrapper ul li a:hover{
+    color: #117acf;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+#active:checked ~ .wrapper ul li a{
+    opacity: 1;
+}
+.wrapper ul li a{
+}
+#active:checked ~.wrapper ul li a{
+    transform: none;
+    transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
+
+    transform: translateX(0px);
+}
+
+
+#logo{
+    background-color: rgb(244, 204, 4);
+    margin-bottom:  100px; 
+}
+#logo img{
+    z-index: -1;
+    min-width: 80px;
+    width: 8%;
+    margin: 10px auto 10px auto;
+    display: block;
+
+}
+.card {
+    display: flex;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 95%;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-text {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-text h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px){
+ .wrapper{
+    width: 100%;
+ }
+ .card {
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+}
+
+
+@media screen and (max-width: 992px) {
+    
+}
