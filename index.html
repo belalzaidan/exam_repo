@@ -10,23 +10,7 @@
     <style></style>
   </head>
   <body>
-    <header>
-      <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
-      <div class="logo">
-        <a href="index.html"><img src="Logo.png" alt="oslomet logo" /></a>
-      </div>
-    </header>
-
-    <div class="menu" id="menu">
-      <div class="menu-items">
-        <a href=""><div class="menu-item">Home Page</div></a>
-        <a href=""><div class="menu-item">Buildings</div></a>
-        <a href=""><div class="menu-item">Cafeteria</div></a>
-        <a href=""><div class="menu-item">Topical</div></a>
-        <a href=""><div class="menu-item">Accessibility</div></a>
-        <a href=""><div class="menu-item">About</div></a>
-      </div>
-    </div>
+    <div w3-include-html="header.html"></div>
 
     <div class="card">
       <div class="card-image">
@@ -48,6 +32,6 @@
 
     <script>
       includeHTML();
-      </script>
+    </script>
   </body>
 </html>

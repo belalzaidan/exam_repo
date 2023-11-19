@@ -138,7 +138,6 @@ header {
   padding-top: 20px;
   font-size: 18px;
   margin: 10px 0;
-  
 }
 @media screen and (max-width: 768px) {
   .card {
@@ -157,48 +156,63 @@ header {
   .card-text {
     text-align: left; /* Align text to the left */
   }
+  .paragraph {
+    text-align: left;
+  }
 }
 
 /* topical page: texts and images */
-.row{
+.row {
   max-width: 1000px;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin: 0 auto;
+  padding: 25px;
 }
-.title{
+.main-title{
+  font-size: 50px;
+  margin:30px auto;
+}
+.title {
   display: block;
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  font-size: 25px;
+  margin: 30px auto;
 }
-.textImage{
+.textImage {
   width: 350px;
 }
-.textImage.textImage-right{
-  float:right;
+.textImage.textImage-right {
+  float: right;
   padding: 0 0 10px 25px;
 }
-.textImage.right{
+.textImage.right {
   padding: 0 0 10px 25px;
 }
-.textImage.left{
-  float:left;
+.textImage.left {
+  float: left;
   padding: 0 25px 10px 0;
 }
-.paragraph{
+.paragraph {
   display: block;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  text-align:justify;
+  text-align: left;
   line-height: 1.8;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 /* Footer */
 /*footer*/
