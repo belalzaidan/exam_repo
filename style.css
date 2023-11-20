@@ -232,6 +232,7 @@ ul li {
 .footer ul {
   list-style: none;
   padding: 0;
+  margin-left: 25px;
 }
 .footer {
   background: var(--oslomet-color);
@@ -251,6 +252,7 @@ ul li {
   text-transform: capitalize;
   margin-bottom: 30px;
   margin-top: 40px;
+  margin-left: 25px;
   font-weight: 600;
   position: relative;
 }
@@ -297,6 +299,7 @@ ul li {
 }
 .footer-col .social-links {
   max-width: 130px;
+  margin-left: 25px;
 }
 .footer-col .social-links a {
   display: inline-block;
@@ -344,7 +347,10 @@ ul li {
 }
 @media (max-width: 1366px) {
   .footer-col {
-    margin-left: 25px;
+    margin: auto;
+  }
+  iframe{
+    margin: auto;
   }
 }
 
